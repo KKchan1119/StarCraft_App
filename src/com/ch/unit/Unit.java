@@ -10,5 +10,21 @@ public class Unit {
         this.ATK = ATK;
         this.DEF = DEF;
     }
+    public int getCurrentHP(){
+        return getCurrentHP();
+    }
+    public void setCurrentHP(int currentHP){
+        this.currentHP = currentHP;
+    }
+
+    public int getATK(){
+        return ATK;
+    }
+    public void setATK(int ATK){
+        this.ATK = ATK;
+    }
+    public void setDEF(int DEF){
+        this.DEF = DEF;
+    }
 
 }
