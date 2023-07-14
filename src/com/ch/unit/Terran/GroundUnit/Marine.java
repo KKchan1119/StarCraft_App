@@ -5,6 +5,11 @@ public class Marine extends GroundUnit {
         super(40, 6, 0);
         currentHP = MAX_HP;
     }
+    public void Attack(){
+
+    }
+
+
     public int getCurrentHP(){
         return getCurrentHP();
     }
