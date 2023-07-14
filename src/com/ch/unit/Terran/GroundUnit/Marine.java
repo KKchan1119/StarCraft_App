@@ -1,6 +1,8 @@
 package com.ch.unit.Terran.GroundUnit;
 
-public class Marine extends GroundUnit {
+import com.ch.unit.unitInterface.Healable;
+
+public class Marine extends GroundUnit implements Healable {
     public Marine() {
         super(40, 6, 0);
         currentHP = MAX_HP;

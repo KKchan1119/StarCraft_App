@@ -13,6 +13,7 @@ public class StarCraftApp {
         Wraith wraithArr[] = new Wraith[200];
         Tank tankArr[] = new Tank[200];
         Dropship dropArr[] =  new Dropship[200];
+        Medic medic[] = new Medic[200];
 
         Unit unit[] = new Unit[200];
         Scanner in = new Scanner(System.in);

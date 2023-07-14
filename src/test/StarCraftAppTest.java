@@ -5,6 +5,7 @@ import com.ch.unit.Terran.Mechine.GroundMachine.*;
 import com.ch.unit.Terran.Mechine.AirUnit.*;
 import com.ch.unit.Unit;
 
+import com.ch.unit.unitInterface.Healable;
 import java.util.Scanner;
 public class StarCraftAppTest {
     public static void main(String[] args){
@@ -62,6 +63,17 @@ public class StarCraftAppTest {
                 +"체력:"+unitArr[y].currentHP+"/"+unitArr[y].MAX_HP+"\n"
                 +"공격력:"+unitArr[y].ATK+"\n"
                 +"방어력:"+unitArr[y].DEF+"\n");
+
+        int b = in.nextInt();
+        System.out.println("치료 시작");
+        Medic medic = new Medic();
+        medic.heal((Healable) unitArr[b]);
+        System.out.println(unitArr[y].toString()+"의 정보 표시\n"
+            +"체력:"+unitArr[y].currentHP+"/"+unitArr[y].MAX_HP+"\n"
+            +"공격력:"+unitArr[y].ATK+"\n"
+            +"방어력:"+unitArr[y].DEF+"\n");
+
+
 
 //        while(true){
 //            cmd = in.nextLine();
