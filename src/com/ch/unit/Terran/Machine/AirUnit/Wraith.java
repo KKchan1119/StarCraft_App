@@ -4,7 +4,7 @@ import com.ch.unit.Terran.Machine.Machine;
 
 public class Wraith extends Machine implements Repairable{
     public Wraith(){
-        super(120,8,0, true);
+        super(120,8,0, false);
     }
 
     public int getCurrentHP(){

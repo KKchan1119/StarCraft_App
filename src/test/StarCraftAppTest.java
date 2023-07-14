@@ -1,6 +1,7 @@
 package test;
 
 import com.ch.unit.Terran.Building.Barracks;
+import com.ch.unit.Terran.Building.Building;
 import com.ch.unit.Terran.GroundUnit.*;
 import com.ch.unit.Terran.Machine.GroundMachine.*;
 import com.ch.unit.Unit;
@@ -51,11 +52,21 @@ public class StarCraftAppTest {
             + "공격력:" + unitArr[y].ATK + "\n"
             + "방어력:" + unitArr[y].DEF + "\n");
         
-        //int c = in.nextInt();
-        //unitArr[c] = new Barracks();
+        int d = in.nextInt();
+        unitArr[d] = new Barracks();
 
-        Barracks b = new Barracks();
-        b.liftOff();
-        System.out.println(b.isGround);
+        unitArr[d].liftOff((Building) unitArr[d]);
+        System.out.println(d + "배럭 동락 " +unitArr[d].isGround);
+
+        unitArr[d].land((Building) unitArr[d]);
+        System.out.println( d + "배럭 동락 " +unitArr[d].isGround);
+
+        int c = in.nextInt();
+        unitArr[c] = new Barracks();
+
+        unitArr[c].liftOff((Building) unitArr[c]);
+        System.out.println(c + "배럭 동작 " + unitArr[c].isGround);
+
+
     }
 }

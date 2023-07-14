@@ -1,8 +1,10 @@
 package com.ch.unit;
 
+import com.ch.unit.Terran.Building.Building;
+import com.ch.unit.unitInterface.Liftable;
 import com.ch.unit.unitInterface.Repairable;
 
-public class Unit implements Repairable {
+public class Unit implements Repairable ,Liftable {
 
     public boolean isGround;
     public int currentHP;
@@ -31,5 +33,19 @@ public class Unit implements Repairable {
     }
     public void setDEF(int DEF){
         this.DEF = DEF;
+    }
+
+    public boolean getisGround() {
+        return getisGround();
+    }
+
+    @Override
+    public void liftOff(Building b) {
+
+    }
+
+    @Override
+    public void land(Building b) {
+
     }
 }

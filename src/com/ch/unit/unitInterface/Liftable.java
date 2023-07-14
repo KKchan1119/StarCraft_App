@@ -1,7 +1,9 @@
 package com.ch.unit.unitInterface;
 
-public interface Liftable {
-  public abstract void liftOff();
+import com.ch.unit.Terran.Building.Building;
 
-  public abstract void land();
+public interface Liftable {
+  public abstract void liftOff(Building b);
+
+  public abstract void land(Building b);
 }
