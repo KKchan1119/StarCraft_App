@@ -12,7 +12,11 @@ public class StarCraftApp {
         SCV scvArr[] = new SCV[200];
         Wraith wraithArr[] = new Wraith[200];
         Tank tankArr[] = new Tank[200];
+<<<<<<< HEAD
         Dropship dropArr[] =  new Dropship[200];
+=======
+        Medic medic[] = new Medic[200];
+>>>>>>> ea9a859b55157d2a6f1f0f89ed2f971bea75c10a
 
         Unit unit[] = new Unit[200];
         Scanner in = new Scanner(System.in);
