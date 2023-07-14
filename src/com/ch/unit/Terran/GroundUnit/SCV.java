@@ -1,11 +1,11 @@
 package com.ch.unit.Terran.GroundUnit;
 import com.ch.unit.Terran.Building.Building;
 import com.ch.unit.unitInterface.Repairable;
-import com.ch.unit.Terran.Mechine.*;
+import com.ch.unit.Terran.Machine.*;
 import com.ch.unit.Unit;
 public class SCV extends GroundUnit implements Repairable {
     public SCV() {
-        super(60, 5, 0);
+        super(60, 5, 0, true);
         currentHP = MAX_HP;
     }
     public int getCurrentHP(){
@@ -30,7 +30,7 @@ public class SCV extends GroundUnit implements Repairable {
     }
     public void repair(Repairable r){
         Unit u = (Unit)r;
-        if(r instanceof Mechine){
+        if(r instanceof Machine){
 
             while(u.currentHP!=u.MAX_HP){
                 u.currentHP++;

@@ -1,10 +1,10 @@
-package com.ch.unit.Terran.Mechine.AirUnit;
+package com.ch.unit.Terran.Machine.AirUnit;
 import com.ch.unit.unitInterface.Repairable;
-import com.ch.unit.Terran.Mechine.Mechine;
+import com.ch.unit.Terran.Machine.Machine;
 
-public class Wraith extends Mechine implements Repairable{
+public class Wraith extends Machine implements Repairable{
     public Wraith(){
-        super(120,8,0);
+        super(120,8,0, true);
     }
 
     public int getCurrentHP(){

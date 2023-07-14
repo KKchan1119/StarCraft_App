@@ -1,8 +1,7 @@
 package com.ch;
-import com.ch.controller.Controller;
 import com.ch.unit.Terran.GroundUnit.*;
-import com.ch.unit.Terran.Mechine.GroundMachine.*;
-import com.ch.unit.Terran.Mechine.AirUnit.*;
+import com.ch.unit.Terran.Machine.GroundMachine.*;
+import com.ch.unit.Terran.Machine.AirUnit.*;
 import com.ch.unit.Unit;
 
 import java.util.Scanner;
