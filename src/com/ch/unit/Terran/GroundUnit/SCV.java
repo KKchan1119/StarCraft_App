@@ -39,6 +39,7 @@ public class SCV extends GroundUnit implements Repairable {
         }else if (r instanceof Building){
             while(u.currentHP != u.MAX_HP){
                 u.currentHP++;
+                System.out.println("수리중...");
             }
         }else{
             System.out.println("수리할 수 없는 유닛입니다.");

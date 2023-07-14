@@ -43,6 +43,15 @@ public class StarCraftAppTest {
             System.out.println(unitArr[y]+"가 제거되었습니다.");
         }
 
+        int a = in.nextInt();
+        System.out.println("수리 시작");
+        SCV scv = new SCV();
+        scv.repair(unitArr[a]);
+        System.out.println(unitArr[y].toString()+"의 정보 표시\n"
+                +"체력:"+unitArr[y].currentHP+"/"+unitArr[y].MAX_HP+"\n"
+                +"공격력:"+unitArr[y].ATK+"\n"
+                +"방어력:"+unitArr[y].DEF+"\n");
+
 //        while(true){
 //            cmd = in.nextLine();
 //

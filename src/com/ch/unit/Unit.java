@@ -1,6 +1,8 @@
 package com.ch.unit;
 
-public class Unit {
+import com.ch.unit.unitInterface.Repairable;
+
+public class Unit implements Repairable {
     public int currentHP;
     public final int MAX_HP;
     public int ATK;
