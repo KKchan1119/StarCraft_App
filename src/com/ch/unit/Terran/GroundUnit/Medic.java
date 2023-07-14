@@ -1,10 +1,8 @@
 package com.ch.unit.Terran.GroundUnit;
 
 import com.ch.unit.Terran.Building.Building;
-import com.ch.unit.Terran.Mechine.Mechine;
 import com.ch.unit.Unit;
 import com.ch.unit.unitInterface.Healable;
-import com.ch.unit.unitInterface.Repairable;
 
 public class Medic extends GroundUnit implements Healable {
   public Medic () {
@@ -54,6 +52,6 @@ public class Medic extends GroundUnit implements Healable {
       System.out.println("치료할 수 없는 유닛입니다.");
     }
 
-
   }
+
 }
