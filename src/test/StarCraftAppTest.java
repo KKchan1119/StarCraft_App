@@ -24,15 +24,26 @@ public class StarCraftAppTest {
                 +"방어력:"+unitArr[i].DEF+"\n");
 
         int j =in.nextInt();
+
         unitArr[j] = new Tank();
+
         System.out.println(unitArr[j].toString()+"의 정보 표시\n"
                 +"체력:"+unitArr[j].currentHP+"/"+unitArr[j].MAX_HP+"\n"
                 +"공격력:"+unitArr[j].ATK+"\n"
                 +"방어력:"+unitArr[j].DEF+"\n");
 
+        int k = in.nextInt();
+
+        unitArr[k] = new Dropship();
+
+        System.out.println(unitArr[k].toString()+"의 정보 표시\n"
+                +"체력:"+unitArr[k].currentHP+"/"+unitArr[k].MAX_HP+"\n"
+                +"공격력:"+unitArr[k].ATK+"\n"
+                +"방어력:"+unitArr[k].DEF+"\n");
+
         int x = in.nextInt();
         int y = in.nextInt();
-        System.out.println(unitArr[x].toString()+"가"+unitArr[y].toString()+"을 공격합니다.");
+        System.out.println(unitArr[x].toString()+"가 "+unitArr[y].toString()+"(을)를 공격합니다.");
         unitArr[y].currentHP = unitArr[y].currentHP - (unitArr[x].ATK - unitArr[y].DEF);
         System.out.println(unitArr[y].toString()+"의 정보 표시\n"
                 +"체력:"+unitArr[y].currentHP+"/"+unitArr[y].MAX_HP+"\n"
