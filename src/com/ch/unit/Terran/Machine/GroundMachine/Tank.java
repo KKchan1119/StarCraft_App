@@ -1,11 +1,11 @@
-package com.ch.unit.Terran.Mechine.GroundMachine;
+package com.ch.unit.Terran.Machine.GroundMachine;
 import com.ch.unit.unitInterface.Repairable;
-import com.ch.unit.Terran.Mechine.Mechine;
+import com.ch.unit.Terran.Machine.Machine;
 
 
-public class Tank extends Mechine implements Repairable{
+public class Tank extends Machine implements Repairable{
     public Tank() {
-        super(150, 30, 1);
+        super(150, 30, 1, true);
         currentHP = MAX_HP;
     }
     public int getCurrentHP(){

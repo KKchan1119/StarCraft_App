@@ -2,7 +2,7 @@ package com.ch.unit.Terran.GroundUnit;
 
 public class Marine extends GroundUnit {
     public Marine() {
-        super(40, 6, 0);
+        super(40, 6, 0, true);
         currentHP = MAX_HP;
     }
     public void Attack(){
