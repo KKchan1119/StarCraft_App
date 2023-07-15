@@ -5,6 +5,7 @@ import com.ch.unit.Terran.Machine.Machine;
 public class BattleCruiser extends Machine implements Repairable{
   public BattleCruiser(){
     super(500,25,3, false);
+    currentHP = MAX_HP;
   }
 
   public int getCurrentHP(){
