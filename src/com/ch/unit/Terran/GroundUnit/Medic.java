@@ -43,11 +43,6 @@ public class Medic extends GroundUnit implements Healable {
                 u.currentHP++;
             }
             System.out.println(u.toString() + " 의 치료 완료");
-        }else if (h instanceof Building){
-            while(u.currentHP != u.MAX_HP){
-                u.currentHP++;
-                System.out.println("치료중...");
-            }
         }else{
             System.out.println("치료할 수 없는 유닛입니다.");
         }
