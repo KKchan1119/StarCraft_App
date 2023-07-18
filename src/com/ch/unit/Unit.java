@@ -12,7 +12,7 @@ public class Unit implements Repairable ,Liftable {
     public int ATK;
     public int DEF;
     public Object Attack;
-
+    public static int unitNumber=0;
     // public boolean isGround;
     public Unit(int hp,int ATK, int DEF, boolean isGround){
         MAX_HP = hp;

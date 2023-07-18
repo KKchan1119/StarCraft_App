@@ -4,7 +4,7 @@ import com.ch.unit.Unit;
 
 public class Marine extends GroundUnit {
     Unit unit;
-
+    public int tagNumber;
     public Marine() {
         super(40, 6, 0, true);
         currentHP = MAX_HP;
